@@ -1,12 +1,60 @@
-# React + Vite
+# 🧠 FocusForge – The Productivity Pattern Profiler
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**FocusForge** is a smart habit and task tracker that visualizes your productivity patterns to help you optimize your daily routine. Whether you're a student, developer, or remote worker, FocusForge empowers you to analyze focus sessions, track streaks, and build better habits — all within a beautiful, minimal dashboard.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ⏱️ Pomodoro Timer: Focus timer with start/stop/reset functionality and session tracking.
+- 🔥 Daily Streak Tracker: Track consecutive focused days with visual indicators.
+- 📊 Focus Analytics Dashboard: Charts your focus durations over time.
+- 📅 Task Completion History *(coming soon)*: Visualize what tasks you completed and when.
+- 🌙 Dark Mode: Tailored for late-night productivity.
+- 💾 LocalStorage-Based Persistence: Works offline without backend.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- Frontend: React  
+- Styling: TailwindCSS  
+- UI Components: ShadCN UI, Lucide Icons  
+- Charts: Recharts  
+- State Management: React Hooks (useState, useEffect)  
+- Persistence: LocalStorage  
+
+---
+
+## 📂 Folder Structure
+```plaintext
+focusforge/  
+├── public/                         # Static assets and base HTML  
+├── src/  
+│   ├── components/  
+│   │   └── Dashboard/  
+│   │       ├── DashboardSummary.jsx       # Summary of focus stats  
+│   │       ├── PomodoroTimer.jsx          # Timer component  
+│   │       ├── StreakTracker.jsx          # Daily streaks component  
+│   │       └── FocusChart.jsx             # Productivity graph  
+│   ├── App.jsx                            # Main application entry  
+│   └── index.js                           # React DOM entry point  
+├── tailwind.config.js                    # Tailwind configuration  
+├── postcss.config.js                     # PostCSS setup  
+├── package.json                          # Dependencies and scripts  
+└── README.md                             # Project documentation  
+```
+---
+
+## 📥 Getting Started
+
+To run FocusForge locally:
+
+1. Clone the repository: `git clone https://github.com/your-username/focusforge.git`  
+2. Navigate to the project directory: `cd focusforge`  
+3. Install dependencies: `npm install`  
+4. Start the development server: `npm run dev` or `npm start`  
+
+Requires Node.js and npm installed on your system.
+
+---
